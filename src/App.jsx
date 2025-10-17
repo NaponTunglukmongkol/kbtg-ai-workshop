@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Payment from './components/Payment';
 import { FaLock, FaBolt, FaMobileAlt } from 'react-icons/fa';
+import viteLogo from './assets/vite.svg';
+import reactLogo from './assets/react.svg';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +12,10 @@ function App() {
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-green-600 text-white py-8">
         <div className="container mx-auto text-center">
+          <div className="flex justify-center gap-4 mb-4">
+            <img src={viteLogo} alt="Vite Logo" className="h-12 text-white" />
+            <img src={reactLogo} alt="React Logo" className="h-12 text-white" />
+          </div>
           <h1 className="text-4xl font-bold">PayFlow Demo</h1>
           <p className="text-lg mt-2">Experience seamless payment processing with modern React components and beautiful UI design</p>
         </div>
